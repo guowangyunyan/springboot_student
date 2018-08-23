@@ -1,5 +1,15 @@
 package com.student.model;
 
+/**
+ * @ClassName: UserForm
+ * @Description: User接收数据实体类
+ * @Author: yx
+ * @CreateDate: 2018/8/23 17:57
+ * @UpdateUser: HP
+ * @UpdateDate: 2018/8/23 17:57
+ * @UpdateRemark: 修改内容
+ * @Version: 1.0
+ */
 public class UserForm {
 
     private String username;//用户名
