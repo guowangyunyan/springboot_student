@@ -1,0 +1,32 @@
+
+server:
+  #端口号
+  port: 8081
+# 设置日志级别
+logging:
+  level.root: info
+spring:
+  datasource:
+    ## 数据库驱动
+    driverclassname: com.mysql.jdbc.Driver
+    ## 数据库连接
+    url: jdbc:mysql://localhost:3306/student
+    ## 用户名
+    username: root
+    ## 密码
+    password: 123456
+  jpa:
+    hibernate:
+      #启动时会根据实体类生成数据表，或者更新表结构，不清空数据，开发阶段使用；validate：表结构稳定后使用，可用于正式环境；
+      ddl-auto: update
+    #控制台打印sql
+    show-sql: true
+
+  #让控制器输出的json格式更美观
+  jackson:
+    serialization.indent-output: true
+
+  thymeleaf:
+    prefix: classpath:/templates/
+
+
