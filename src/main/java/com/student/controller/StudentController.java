@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.List;
 
 @Controller
+@RequestMapping("/student")
 public class StudentController {
     @Autowired
     private StudentService studentService;
